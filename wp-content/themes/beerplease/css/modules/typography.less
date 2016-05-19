@@ -1,0 +1,359 @@
+/*
+Styleguide Typographie
+*/
+
+/*
+Markup:
+<p class="font-default $modifierClass">Ceci est un paragraphe de texte avec des mots qui forment une phrCeci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens. Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens. Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens.</p>
+<p class="font-default bigger $modifierClass">Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens. Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens. Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens.</p>
+<p class="font-default bigger-2 bolder $modifierClass">Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens. Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens.</p>
+
+.font-primary      - Police pour texte : Source Sans Pro
+.font-secondary    - Police pour titre : Arvo
+
+Styleguide Typographie - Fonts titre et texte
+*/
+.font-default {
+    font-family: Arial, Verdana, sans-serif;
+}
+.font-primary {
+    font-family: @fontRegular;
+}
+.font-secondary {
+    font-family: @fontRegularAlt;
+}
+.bigger {
+    .em-size(25);
+}
+.bigger-2 {
+    .em-size(40);
+    line-height: 1.1;
+}
+.bolder {
+    font-weight: bold;
+}
+
+/*
+Styleguide Mise en page texte
+*/
+
+/*
+Markup:
+<div class="content">
+	<h1>Ceci est un titre de niveau 1</h1>
+	<h2>Ceci est un titre de niveau 2</h2>
+	<h3>Ceci est un titre de niveau 3</h3>
+	<h4>Ceci est un titre de niveau 4</h4>
+	<p>Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens et <a href="http://biig.fr" title="Site internet de BiiG (Nouvelle fenêtre)" target="_blank">un lien vers une page</a>. Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens. Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens. Ceci est un paragraphe de texte avec des mots qui forment une phrase qui a un sens.</p>
+	<ul>
+		<li>Ceci est un item d'une liste à puces non ordonnée.</li>
+		<li>Ceci est un item d'une liste à puces non ordonnée.</li>
+		<li>Ceci est un item d'une liste à puces non ordonnée.</li>
+		<li>Ceci est un item d'une liste à puces non ordonnée.</li>
+	</ul>
+	<ol>
+		<li>Ceci est un item d'une liste ordonnée.</li>
+		<li>Ceci est un item d'une liste ordonnée.</li>
+		<li>Ceci est un item d'une liste ordonnée.</li>
+		<li>Ceci est un item d'une liste ordonnée.</li>
+	</ol>
+	<blockquote>
+		<h2>Ceci est un titre de niveau 2 dans un bloc de citation</h2>
+		<p>Ceci est un paragraphe dans un bloc de citation et <a href="http://biig.fr" title="Site internet de BiiG (Nouvelle fenêtre)" target="_blank">un lien vers une page</a>. Ceci est un paragraphe dans un bloc de citation. Ceci est un paragraphe dans un bloc de citation.</p>
+	</blockquote>
+	<table>
+		<tr>
+			<th>Entête 1</th>
+			<th>Entête 2</th>
+			<th>Entête 3</th>
+			<th>Entête 4</th>
+		</tr>
+		<tr>
+			<td>Cellule 1, ligne 1</td>
+			<td>Cellule 2, ligne 1</td>
+			<td>Cellule 3, ligne 1</td>
+			<td>Cellule 4, ligne 1</td>
+		</tr>
+		<tr>
+			<td>Cellule 1, ligne 2</td>
+			<td>Cellule 2, ligne 2</td>
+			<td>Cellule 3, ligne 2</td>
+			<td>Cellule 4, ligne 2</td>
+		</tr>
+		<tr>
+			<td>Cellule 1, ligne 3</td>
+			<td>Cellule 2, ligne 3</td>
+			<td>Cellule 3, ligne 3</td>
+			<td>Cellule 4, ligne 3</td>
+		</tr>
+		<tr>
+			<td>Cellule 1, ligne 4</td>
+			<td>Cellule 2, ligne 4</td>
+			<td>Cellule 3, ligne 4</td>
+			<td>Cellule 4, ligne 4</td>
+		</tr>
+	</table>
+</div>
+
+Styleguide Mise en page texte - Titres, paragraphe, listes, bloc de citation, tableau
+*/
+
+.title,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0 0 12px 0;
+    line-height: 1.1;
+    font-family: @fontRegular;
+}
+
+/* ==========================================================================
+   Titres hx
+   ========================================================================== */
+.title-h1,
+h1 {
+    color: @color-primary;
+    .em-size(20);
+}
+@media screen and (min-width: @grid-float-breakpoint) {
+    .title-h1,
+    h1 {
+        .em-size(28);
+    }
+}
+
+.title-h2,
+h2 {
+    color: @color-h2;
+    .em-size(18);
+}
+@media screen and (min-width: @grid-float-breakpoint) {
+    .title-h2,
+    h2 {
+        .em-size(24);
+    }
+}
+
+.title-h3,
+h3 {
+    color: @color-h3;
+    .em-size(16);
+}
+@media screen and (min-width: @grid-float-breakpoint) {
+    .title-h3,
+    h3 {
+        .em-size(22);
+    }
+}
+
+.title-h4,
+h4 {
+    color: @color-h4;
+    .em-size(14);
+}
+@media screen and (min-width: @grid-float-breakpoint) {
+    .title-h4,
+    h4 {
+        .em-size(20);
+    }
+}
+
+/* ==========================================================================
+   Text, table and others
+   ========================================================================== */
+.single {
+    a {
+        color: @color-primary;
+        text-decoration: none;
+        border-bottom: 1px dotted @color-secondary;
+        .transition(all .2s);
+
+        &:hover,
+        &:focus {
+            color: @color-primary;
+            border-bottom-style: solid;
+        }
+
+        .nav-news & {
+            border: 0;
+        }
+    }
+    p,
+    ul,
+    ol {
+        line-height: 1.4;
+        margin-bottom: 12px;
+        .em-size(15);
+    }
+    ol,
+    ul {
+        margin: 0 0 12px 20px;
+        overflow: hidden;
+
+        ul {
+            margin: 4px 0;
+        }
+
+
+        li:not(.list-item) li:not(.list-item) {
+            .em-size();
+        }
+    }
+    ol > li:not(.list-item),
+    ul > li:not(.list-item) {
+        list-style-type: disc;
+        margin: 0 0 2px 0;
+        padding-left: 0;
+        .em-size(15);
+
+        p,
+        li:not(.list-item),
+        .widget & {
+            .em-size();
+        }
+
+    }
+    ol {
+        overflow: visible;
+        counter-reset: ol-counter;
+        margin-left: 30px;
+    }
+    ol > li:not(.list-item) {
+        position: relative;
+        list-style-type: none;
+    }
+    ol > li:before {
+        background: @color-primary;
+        content: counter(ol-counter);
+        counter-increment: ol-counter;
+        color: #fff;
+        width: 20px;
+        height: 20px;
+        line-height: 1.5;
+        position: absolute;
+        display: table-cell;
+        vertical-align: middle;
+        font-family:@fontRegular;
+        text-align: center;
+        top: -1px;
+        left: -25px;
+        border-radius: 10px;
+        .em-size();
+    }
+    hr {
+        height: 1px;
+        background: @color-border;
+        border: 0;
+    }
+    strong,
+    b {
+        font-weight: bold;
+    }
+    blockquote {
+        clear: both;
+        margin: 0 0 25px;
+        padding: 10px 20px;
+        border-left: 5px solid @color-muted;
+        .em-size(20);
+    }
+}
+.single-info {
+    color: @color-muted;
+
+    a {
+        color: inherit;
+        border: 0;
+
+        &:hover {
+            color: #666;
+        }
+    }
+}
+.single-footer {
+    clear: both;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+/* Tableaux
+   ========================================================================== */
+table {
+    margin-bottom: 15px;
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-width: 1px 0 0 1px;
+    border-color: @color-primary #ccc #ccc;
+}
+td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: #ccc;
+    float: none;
+    padding: 10px;
+    vertical-align: top;
+}
+th,
+td {
+    .em-size(15);
+    line-height: 1.4;
+
+    p,
+    li {
+        .em-size();
+    }
+
+    ol,
+    ul {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+}
+th,
+thead td{
+    padding: 10px;
+    color: #fff;
+    font-family: @fontRegular;
+    font-weight: normal;
+    vertical-align: middle;
+    background: @color-primary;
+    border-style: solid;
+    border-color: lighten(@color-primary, 5%);
+    border-width: 0 1px 1px 0;
+
+}
+@media screen and (max-width: @smartphone) {
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    tbody tr {
+        &:nth-child(even) td {
+            background: #fff;
+        }
+    }
+
+    td {
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+    }
+}

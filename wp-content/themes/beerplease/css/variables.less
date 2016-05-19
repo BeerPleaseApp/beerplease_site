@@ -1,0 +1,85 @@
+/**
+ * Variables (couleurs, polices, icons ...)
+ * @name         vars.less
+ * @author       BiiG
+*/
+
+// Main colors
+@color-primary: #3f85da;
+@color-secondary: darken(@color-primary, 10%);
+@color-third: #000;
+@color-muted: #999;
+
+// Common colors
+@color-bg-body: #fff;
+@color-text: #222;
+@color-bg: #fefefe;
+@color-bg-main: #eee;
+@color-bg-header: #fff;
+@color-bg-footer: #222;
+@color-border: #ddd;
+@color-selection: #666;
+
+// Titles
+@color-h2: #555;
+@color-h3: #777;
+@color-h4: #999;
+
+// Font text (change fonts in this theme, in includes/files.inc.php
+@fontRegular: 'Arvo', 'Georgia', serif;
+@fontRegularAlt: 'Open Sans', 'Arial', 'Verdana', sans-serif;
+
+// Font icon (FontAwesome : https://fontawesome.github.io/Font-Awesome/)
+@import url("../components/font-awesome/less/font-awesome");
+@fontIcon: 'FontAwesome';
+
+// Font size
+@baseFontSize: 16;
+
+// Bootstrap
+@import url("../components/bootstrap/less/bootstrap");
+
+/* ==========================================================================
+   Responsive breakpoints
+   ========================================================================== */
+// Responsive breakpoints from Bootstrap > variables.less
+@smartphoneLowRes: @screen-xs; // >> 480px << @media screen and (max-width: @smartphoneLowRes)
+@smartphoneLowResAfter: (@screen-xs + 1); // >> 481px << @media screen and (max-width: @smartphoneLowResAfter)
+@smartphone: @screen-xs-max; // >> 767px << @media screen and (max-width: @smartphone)
+@tabletMin: @screen-sm; // >> 768px << @media screen and (max-width: @tabletMin)
+@grid-float-breakpoint: (@screen-sm + 1); // >> 769px << @media screen and (max-width: @@tabletMinAfter)
+@tabletMax: @screen-md; // >> 992px << @media screen and (min-width: @tabletMin) and (max-width: @tabletMax)
+@desktopMin: @screen-lg; // >> 1200px << @media screen and (min-width: @desktopMin)
+
+/*
+Styleguide Couleurs
+*/
+
+/*
+Markup: <div class="color-div $modifierClass"></div>
+
+.color-primary          - couleur principale
+.color-secondary        - couleur 2
+.color-third            - couleur 3
+.color-muted            - couleur mutée
+
+Styleguide Couleurs - Couleurs de base et couleur pour chaque espace
+*/
+.color-div {
+	background-color: #666;
+	display: block;
+	width: 100%;
+	height: 90px;
+}
+.color-primary {
+	background-color: @color-primary;
+}
+.color-secondary {
+	background-color: @color-secondary;
+}
+.color-third {
+	background-color: @color-third;
+}
+.color-muted {
+	background-color: @color-muted;
+}

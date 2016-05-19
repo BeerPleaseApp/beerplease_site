@@ -1,0 +1,172 @@
+/**
+ * Mixins LESS
+ * @name         mixins.less
+ * @author       BiiG
+*/
+
+/*
+Cacher le texte de son conteneur
+*/
+.ir() {
+	display:block;
+	font: ~"0/0" a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+/*
+Calcul de la font PX to EM
+*/
+.em-size( @value: @baseFontSize) {
+	font-size: (@value / @baseFontSize) + 0em;
+}
+
+/*
+Créer une transition entre deux états d'un élément
+@arguments		- Paramètres de la transition
+*/
+.transition(@arguments) {
+	-webkit-transition: @arguments;
+	transition: @arguments;
+}
+
+/*
+Gérer la transparence/opacité d'un élément
+@opacity: 		- Opacité d'un élément de 0 (transparent) à 1 (opaque)
+*/
+.opacity(@opacity) {
+	opacity: @opacity;
+	@opacityPercentage: @opacity * 100;
+	filter: ~"alpha(opacity=@{opacityPercentage})";
+}
+
+/*
+Gérer la rotation d'un élément
+@deg			- Rotation en degrés d'un élément (unité = deg)
+*/
+.rotate(@deg) {
+	-webkit-transform: rotate(@deg);
+	-moz-transform: rotate(@deg);
+	transform: rotate(@deg);
+}
+
+/*
+Gérer la rotation d'un élément
+@ratio 			- Ratio scale (0.5 = 50%, 1 = 100%, 1.5 = 150%)
+*/
+.scale(@ratio) {
+	-webkit-transform: scale(@ratio);
+	-ms-transform: scale(@ratio);
+	transform: scale(@ratio);
+}
+
+/*
+Gérer la position et le déplacement sur 3 axes d'un élément
+@x 				- Axe des abscisses X
+@y 				- Axe des ordonnées Y
+@z 				- Axe de la profondeur Z
+*/
+.translate3d(@x, @y: 0, @z: 0) {
+	-webkit-transform: translate3d(@x, @y, @z);
+	-ms-transform: translate3d(@x, @y, @z);
+	transform: translate3d(@x, @y, @z);
+}
+
+/*
+Gérer la position et le déplacement sur 3 axes d'un élément
+@x 				- Axe des abscisses X
+*/
+.translateX(@x) {
+	-webkit-transform: translateX(@x);
+	-ms-transform: translateX(@x);
+	transform: translateX(@x);
+}
+
+/*
+Gérer la position et le déplacement sur 3 axes d'un élément
+@y   			- Axe des ordonnées Y
+*/
+.translateY(@y) {
+	-webkit-transform: translateY(@y);
+	-ms-transform: translateY(@y);
+	transform: translateY(@y);
+}
+
+/*
+Dégradé vertical
+@start-color 	- Couleur de départ (default = #555)
+@end-color		- Couleur de fin (default = #333) : couleur également utilisée en fallback
+@start-percent 	- Niveau de départ de la couleur top en pourcentage (default = 0%)
+@end-percent 	- Niveau de fin de la couleur bottom en pourcentage (default = 100%)
+*/
+.gradient-vertical(@start-color: #555, @end-color: #333, @start-percent: 0%, @end-percent: 100%) {
+	background: @end-color;
+	background: -webkit-linear-gradient(top, @start-color @start-percent, @end-color @end-percent);
+	background: linear-gradient(to bottom, @start-color @start-percent, @end-color @end-percent);
+}
+
+/*
+Dégradé horizontal
+@start-color 	- Couleur de départ (default = #555)
+@end-color 		- Couleur de fin (default = #333) : couleur également utilisée en fallback
+@start-percent 	- Niveau de départ de la couleur top en pourcentage (default = 0%)
+@end-percent  	- Niveau de fin de la couleur bottom en pourcentage (default = 100%)
+*/
+.gradient-horizontal(@start-color: #555, @end-color: #333, @start-percent: 0%, @end-percent: 100%) {
+	background: @end-color;
+	background: -webkit-linear-gradient(left, @start-color @start-percent, @end-color @end-percent);
+	background: linear-gradient(to right, @start-color @start-percent, @end-color @end-percent);
+}
+
+/*
+Dégradé radial
+@start-color 	- Couleur de départ
+@end-color 		- Couleur de fin : couleur également utilisée en fallback
+*/
+.gradient-radial(@start-color, @end-color) {
+	background: @end-color;
+	background: -webkit-radial-gradient(center, ellipse cover, @start-color 0%, @end-color 100%);
+	background: radial-gradient(ellipse at center, @start-color 0%, @end-color 100%);
+}
+
+/*
+Box-sizing
+@type 			- Valeur de la propriétée box-sizing (border-box par défaut)
+*/
+.box-sizing(@type: border-box) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing: @type;
+	box-sizing: @type;
+}
+
+/*
+Gérer l'inclinaison d'un élément
+@deg 			- Inclinaison en degrés d'un élément (unité = deg)
+*/
+.skew(@deg) {
+	-webkit-transform: skew(@deg);
+	-ms-transform: skew(@deg);
+	transform: skew(@deg);
+}
+
+/*
+Gérer l'inclinaison d'un élément sur l'axe des ordonnées
+@deg  			- Inclinaison en degrés d'un élément (unité = deg) sur l'axe des ordonnées
+*/
+.skewY(@deg) {
+	-webkit-transform: skewY(@deg);
+	-ms-transform: skewY(@deg);
+	transform: skewY(@deg);
+}
+
+/*
+Gérer le flou d'un élément
+@dist 			- Valeur en px du flou sur un élément
+*/
+.blur(@dist){
+	-webkit-filter: blur(@dist);
+	-ms-filter: blur(@dist);
+	filter: blur(@dist);
+}

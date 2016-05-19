@@ -1,0 +1,41 @@
+/**
+ * Logo
+ * @desc         Styles des différents logos utilisés sur le site
+ * @name         logo.less
+ * @requires     styles.less
+ */
+
+.logo {
+    img {
+        display: block;
+        max-width: 70%;
+        height: auto;
+    }
+}
+.logo-main {
+    float: left;
+}
+.logo-baseline {
+    display: none;
+}
+
+@media screen and (min-width: @tabletMin) {
+    .logo {
+        img {
+            max-width: inherit;
+        }
+    }
+    .logo-main {
+        margin-right: 25px;
+    }
+    .logo-baseline {
+        display: block;
+        float: left;
+        margin-bottom: 0;
+        line-height: 65px;
+        color: @color-h3;
+        font-family: @fontRegular;
+        text-transform: uppercase; 
+        .em-size(14);
+    }
+}

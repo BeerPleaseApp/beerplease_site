@@ -1,0 +1,180 @@
+/*
+Styleguide Formulaires
+*/
+
+/*
+Formulaire de base
+
+Markup:
+<form action="#">
+	<label for="text1">Mon premier champ</label>
+	<input type="text" id="text1" name="text1" placeholder="Mon texte" />
+	<label for="text2">Mon premier champ</label>
+	<input type="text" id="text2" name="text2" placeholder="Mon texte 2" />
+	<div class="form-entitie">
+		<div class="radio-choice">
+			<input type="radio" name="radio1" id="radio1" />
+			<label for="radio1">Mon premier choix</label>
+		</div>
+		<div class="radio-choice">
+			<input type="radio" name="radio1" id="radio2" />
+			<label for="radio2">Mon second choix</label>
+		</div>
+		<div class="radio-choice">
+			<input type="radio" name="radio1" id="radio3" />
+			<label for="radio3">Mon troisième choix</label>
+		</div>
+	</div>
+	<div class="form-entitie">
+		<div class="checkbox-choice">
+			<input type="checkbox" name="checkbox1" id="checkbox1" />
+			<label for="checkbox1">Mon premier choix</label>
+		</div>
+		<div class="checkbox-choice">
+			<input type="checkbox" name="checkbox2" id="checkbox2" />
+			<label for="checkbox2">Mon second choix</label>
+		</div>
+		<div class="checkbox-choice">
+			<input type="checkbox" name="checkbox3" id="checkbox3" />
+			<label for="checkbox3">Mon troisième choix</label>
+		</div>
+	</div>
+	<label for="choice1">Ma liste de choix</label>
+	<select id="choice1" name="choice1">
+		<option value="1"> Ma valeur numéro 1</option>
+		<option value="2"> Ma valeur numéro 2</option>
+		<option value="3"> Ma valeur numéro 3</option>
+		<option value="4"> Ma valeur numéro 4</option>
+	</select>
+	<label for="text3">Mon texte long</label>
+	<textarea id="text3" name="longtext1" placeholder="Ceci est mon texte long"></textarea>
+	<button type="submit" class="btn">Valider</button>
+</form>
+
+Styleguide Formulaires - Formulaire classique
+*/
+
+label {
+    color: @color-primary;
+    .em-size();
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    border: 1px solid @color-primary;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+
+    &:focus {
+        border-color: lighten(@color-secondary, 10%);
+    }
+}
+
+input[type=radio],
+input[type=checkbox] {
+    margin-right: 3px;
+    margin-top: 1px;
+}
+
+textarea {
+    min-height: 110px;
+}
+
+.checkbox-choice,
+.radio-choice {
+    display: block;
+    clear: both;
+}
+
+.form-entitie {
+    display: block;
+    padding-bottom: 20px;
+}
+
+/*
+Formulaire de recherche
+*/
+.search-form {
+    position: relative;
+    height: 40px;
+    width: 86%;
+    margin: 20px 0 20px 7%;
+}
+form.form-search {
+    position: relative;
+    max-width: 400px;
+
+    label {
+        display: none;
+    }
+    .form-text {
+        width: 100%;
+        height: 40px;
+        padding: 6px 55px 6px 20px;
+        margin-bottom: 0 !important;
+        background-color: #fff;
+        color: @color-secondary;
+        border-radius: 20px;
+        border: 1px solid @color-secondary;
+
+        &:focus {
+            border-color: @color-border;
+        }
+    }
+    .form-submit {
+        position: absolute;
+        right: -3px;
+        top: 0;
+        z-index: 5;
+        height: 40px;
+        width: 40px;
+        color: @color-secondary;
+        background: @color-secondary;
+        border-radius: 0 20px 20px 0;
+        border: 0;
+        .transition(all .2s);
+
+        i {
+            display: block;
+            color: #fff;
+            .em-size(20);
+        }
+
+        span {
+            display: none;
+        }
+
+        &:hover,
+        &:focus {
+            color: darken(@color-secondary, 10%);
+            background-color: darken(@color-secondary, 10%);
+        }
+    }
+
+    .search-form & {
+        max-width: inherit;
+    }
+}
+
+@media screen and (min-width: @grid-float-breakpoint) {
+    .search-form {
+        position: absolute;
+        width: 510px;
+        top: 125px;
+        left: 50% !important;
+        margin-left: -255px !important;
+        margin-top: 0 !important;
+
+    }
+    form.form-search {
+        .form-text {
+            border-color: #fff;
+        }
+
+        .form-submit {
+            width: 50px;
+        }
+    }
+}

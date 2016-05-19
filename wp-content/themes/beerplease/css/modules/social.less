@@ -1,0 +1,169 @@
+/*
+Styleguide Social
+*/
+
+/*
+Liens réseaux sociaux
+
+Markup:
+<div class="social">
+    <ul>
+        <li class="social-item social-facebook"><a href=""><i class="fa fa-facebook"></i><span class="text">Facebook</span></a></li>
+        <li class="social-item social-twitter"><a href=""><i class="fa fa-twitter"></i><span class="text">Twitter</span></a></li>
+        <li class="social-item social-google-plus"><a href=""><i class="fa fa-google-plus"></i><span class="text">Google Plus</span></a></li>
+        <li class="social-item social-pinterest"><a href=""><i class="fa fa-pinterest-p"></i><span class="text">Pinterest</span></a></li>
+        <li class="social-item social-instagram"><a href=""><i class="fa fa-instagram"></i><span class="text">Instagram</span></a></li>
+        <li class="social-item social-viadeo"><a href=""><i class="fa fa-users"></i><span class="text">Viadeo</span></a></li>
+        <li class="social-item social-linkedin"><a href=""><i class="fa fa-linkedin"></i><span class="text">LinkedIn</span></a></li>
+        <li class="social-item social-mail"><a href=""><i class="fa fa-envelope-o"></i><span class="text">Email</span></a></li>
+    </ul>
+</div>
+
+Styleguide Social - Liens réseaux sociaux
+*/
+
+.social {
+    margin: 25px 0;
+    display: none;
+}
+.social-item {
+    display: block;
+    float: left;
+    width: 40px;
+
+    + .social-item {
+        margin-left: 5px;
+    }
+
+    a {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        font-weight: normal;
+        background: #666;
+        border-radius: 50%;
+        .transition(background-color .2s);
+
+        span.text {
+            .ir();
+        }
+
+        i.fa {
+            position: absolute;
+            top: 9px;
+            left: 10px;
+            font-weight: normal;
+            color: #fff;
+            font-size: 22px;
+
+            &.fa-facebook {
+                left: 13px;
+            }
+
+            &.fa-twitter {
+                left: 11px;
+            }
+
+            &.fa-google-plus {
+                left: 7px;
+            }
+
+            &.fa-pinterest {
+                left: 12px;
+            }
+
+            &.fa-instagram {
+                left: 11px;
+            }
+
+            &.fa-users {
+                left: 8px;
+            }
+
+            &.fa-linkedin {
+                left: 11px;
+            }
+
+            &.fa-envelope-o {
+                left: 9px;
+            }
+        }
+
+        &:hover {
+            background-color: @color-primary;
+        }
+    }
+    &.social-facebook a:hover {
+        background-color: #537abc;
+    }
+    &.social-twitter a:hover {
+        background-color: #55acee;
+    }
+    &.social-google-plus a:hover {
+        background-color: #e95554;
+    }
+    &.social-pinterest a:hover {
+        background-color: #c72527;
+    }
+    &.social-instagram a:hover {
+        background-color: #326289;
+    }
+    &.social-viadeo a:hover {
+        background-color: #ee7355;
+    }
+    &.social-linkedin a:hover {
+        background-color: #0077b5;
+    }
+    &.social-mail a {
+        background-color: #666;
+    }
+}
+@media screen and (min-width: @tabletMin) {
+    .social {
+        display: block;
+        margin-top: 0; 
+        float: right;    
+    }
+    .social-label {
+        text-align: right;  
+    }
+}
+
+
+/* ==========================================================================
+   Social share
+   ========================================================================== */
+.single .social-share {
+    display: inline-block;  
+    float:  left;
+    margin: 0;
+
+    ul {
+        margin: 0;
+        display: inline-block;
+    }
+
+    .social-item {
+        margin: 0 5px 0 0;
+
+        a {
+            background: none;
+            border: 0;
+        }
+
+        .fa:before {
+            top: 1px;
+            left: 1px;
+            color: #fff;
+            font-size: 21px;
+        }
+    }
+}
+@media screen and (min-width: @tabletMin) {
+    .social-share {
+        float: none;    
+        margin-top: -8px;   
+    }
+}

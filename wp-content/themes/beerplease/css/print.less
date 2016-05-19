@@ -1,0 +1,28 @@
+/**
+ * Feuille de styles print
+ * @name         print.less
+ * @author       BiiG
+*/
+
+@media print {
+	* {
+        -webkit-print-color-adjust: exact; //force to show background-color
+    }
+
+	header.header,
+	.btn,
+	.button,
+	.sidebar,
+	.comments,
+	.single-footer,
+	footer,
+	nav,
+	.notice-cookie {
+		display: none !important;
+	}
+
+	.single img {
+		max-width: 300px !important;
+		height: auto;
+	}
+}

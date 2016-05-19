@@ -1,0 +1,3 @@
+<?php
+
+define('GF_LICENSE_KEY', '3378d779d206076ae80089b369513735');

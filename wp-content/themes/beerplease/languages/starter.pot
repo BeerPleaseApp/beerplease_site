@@ -1,0 +1,301 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Maif\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Aug 03 2015 16:11:13 GMT+0200 (CEST)\n"
+"POT-Revision-Date: Thu Feb 11 2016 16:38:36 GMT+0100 (CET)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#. Name of the template
+msgid "Actualités"
+msgstr ""
+
+#: ../archive.php:15
+#, php-format
+msgid "News - Archives of %s"
+msgstr ""
+
+#: ../archive.php:17
+#, php-format
+msgid "News - Archive of the month of %s"
+msgstr ""
+
+#: ../archive.php:17
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../archive.php:19
+#, php-format
+msgid "News - Archive of the year %s"
+msgstr ""
+
+#: ../archive.php:19
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../archive.php:21
+msgid "News"
+msgstr ""
+
+#: ../archive.php:37
+msgid "No news for this moment."
+msgstr ""
+
+#: ../comments.php:8
+#, php-format
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:27
+msgid "Comments are closed."
+msgstr ""
+
+#: ../footer.php:8
+msgid "All rights reserved"
+msgstr ""
+
+#: ../header.php:61
+msgid "Back to homepage"
+msgstr ""
+
+#. Name of the template
+msgid "Page d'accueil"
+msgstr ""
+
+#. Name of the template
+msgid "Page mentions légales"
+msgstr ""
+
+#: ../page-legalterms.php:20
+msgid "Site owner"
+msgstr ""
+
+#: ../page-legalterms.php:36 ../page-legalterms.php:48 ../page-legalterms.php:55 .
+#: ./templates/widget-address.php:17
+msgid "Phone"
+msgstr ""
+
+#: ../page-legalterms.php:40 ../page-legalterms.php:56 ../templates/widget-
+#: address.php:21
+msgid "Fax"
+msgstr ""
+
+#: ../page-legalterms.php:44
+msgid "Hoster contact information"
+msgstr ""
+
+#: ../page-legalterms.php:50
+msgid "Website designer contact information"
+msgstr ""
+
+#: ../page-legalterms.php:52 ../templates/social-networks.php:47
+msgid "New window"
+msgstr ""
+
+#. Name of the template
+msgid "Page plan du site"
+msgstr ""
+
+#: ../search.php:11
+msgid "Search results"
+msgstr ""
+
+#: ../search.php:24
+msgid "There are"
+msgstr ""
+
+#: ../search.php:26
+msgid " result"
+msgstr ""
+
+#: ../search.php:30
+msgid "for"
+msgstr ""
+
+#: ../search.php:36
+msgid "Search again?"
+msgstr ""
+
+#: ../search.php:47
+msgid "Please be more specific in your search."
+msgstr ""
+
+#: ../searchform.php:4 ../templates/nav-breadcrumb.php:25
+msgid "Search"
+msgstr ""
+
+#: ../searchform.php:5 ../templates/single-post.php:9
+msgid "Keywords"
+msgstr ""
+
+#: ../includes/comments.inc.php:25
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../includes/comments.inc.php:30
+#, php-format
+msgid "On %1$s at %2$s"
+msgstr ""
+
+#: ../includes/comments.inc.php:36
+msgid "Edit"
+msgstr ""
+
+#: ../includes/comments.inc.php:64 ../includes/contact.inc.php:154
+msgid "Name"
+msgstr ""
+
+#: ../includes/comments.inc.php:65
+msgid "Email"
+msgstr ""
+
+#: ../includes/comments.inc.php:76
+msgid "Please enter your name."
+msgstr ""
+
+#: ../includes/comments.inc.php:79
+msgid "Please enter your email address."
+msgstr ""
+
+#: ../includes/comments.inc.php:82
+msgid "Please enter valid email."
+msgstr ""
+
+#: ../includes/contact.inc.php:91
+msgid "Sign up for the newsletter"
+msgstr ""
+
+#: ../includes/contact.inc.php:138
+msgid "Mailpoet Signup"
+msgstr ""
+
+#: ../includes/contact.inc.php:149
+msgid "Required field?"
+msgstr ""
+
+#: ../includes/contact.inc.php:170
+msgid "Make this checkbox checked by default?"
+msgstr ""
+
+#: ../includes/contact.inc.php:178 ../includes/contact.inc.php:181
+msgid "optional"
+msgstr ""
+
+#: ../includes/contact.inc.php:188
+msgid "Copy this code and paste it into the form left."
+msgstr ""
+
+#: ../includes/contact.inc.php:190
+msgid "And, put this code into the Mail fields below."
+msgstr ""
+
+#: ../templates/btn-contact-us.php:6
+msgid "Contact-us!"
+msgstr ""
+
+#: ../templates/list-news.php:16 ../templates/single-post.php:3
+msgid "The"
+msgstr ""
+
+#: ../templates/list-news.php:16 ../templates/single-post.php:3
+msgid "in"
+msgstr ""
+
+#: ../templates/list-news.php:32 ../templates/notice-cookie.php:5
+msgid "Read more"
+msgstr ""
+
+#: ../templates/list-results.php:6 ../templates/social-networks.php:6 ..
+#: /templates/social-networks.php:24
+msgid "Page"
+msgstr ""
+
+#: ../templates/list-results.php:9
+msgid "Blog"
+msgstr ""
+
+#: ../templates/nav-breadcrumb.php:5
+msgid "Back to home page"
+msgstr ""
+
+#: ../templates/nav-breadcrumb.php:5
+msgid "Home"
+msgstr ""
+
+#: ../templates/nav-comment.php:3
+msgid "&larr; Oldest reviews"
+msgstr ""
+
+#: ../templates/nav-comment.php:4
+msgid "Newest reviews &rarr;"
+msgstr ""
+
+#: ../templates/nav-news.php:4
+msgid "Toutes les actualités"
+msgstr ""
+
+#: ../templates/nav-news.php:4
+msgid "All news"
+msgstr ""
+
+#: ../templates/nav-news.php:7
+msgid "Blog RSS Feed - New window"
+msgstr ""
+
+#: ../templates/notice-cookie.php:4
+msgid ""
+"By browsing this site, you accept the use of cookies to compile statistics "
+"of attendance and thus improve interest and usability of our services."
+msgstr ""
+
+#: ../templates/notice-cookie.php:5
+msgid "OK"
+msgstr ""
+
+#: ../templates/social-networks.php:12 ../templates/social-networks.php:18 ..
+#: /templates/social-networks.php:30 ../templates/social-networks.php:36
+msgid "Profil"
+msgstr ""
+
+#: ../templates/social-networks.php:47
+msgctxt "social-networks"
+msgid "from"
+msgstr ""
+
+#. Name of the theme
+msgid "Starter"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "http://www.biig.fr"
+msgstr ""
+
+#. Description of the theme
+msgid "Un thème Wordpress simple, complet, efficace et stable développé à la main"
+msgstr ""
+
+#. Author of the theme
+msgid "BiiG Team"
+msgstr ""

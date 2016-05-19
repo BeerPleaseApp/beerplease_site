@@ -1,0 +1,12 @@
+prod:
+    scheme: ftp
+    host: ftp.prev-maif.fr #serveur de PROD
+    port: 21
+    user: prevmaif
+    pass: di5zeYKB
+    check: true  # active la confirmation avant le déploiement
+    branch: master  # branche GIT qui sera déployée
+    path:
+        remote: "/www/" # chemin du site de PROD
+    options:
+    exclude: ["dploy.yaml", "wp-config.php", ".gitignore", "composer.*", ".htaccess", "bower.json", ".bowerrc", "package.json", "gulpfile.js"]

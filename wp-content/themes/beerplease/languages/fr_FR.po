@@ -1,0 +1,302 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Maif\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Aug 03 2015 16:11:13 GMT+0200 (CEST)\n"
+"PO-Revision-Date: Thu Feb 11 2016 16:41:33 GMT+0100 (CET)\n"
+"Last-Translator: BiiG BiiG <www@biig.fr>\n"
+"Language-Team: \n"
+"Language: French (France)\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Loco-Target-Locale: fr_FR"
+
+#. Name of the template
+msgid "Actualités"
+msgstr "Actualités"
+
+#: ../archive.php:15
+#, php-format
+msgid "News - Archives of %s"
+msgstr "Actualités - Archives %s"
+
+#: ../archive.php:17
+#, php-format
+msgid "News - Archive of the month of %s"
+msgstr "Actualités - Archives du mois de %s"
+
+#: ../archive.php:17
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: ../archive.php:19
+#, php-format
+msgid "News - Archive of the year %s"
+msgstr "Actualités - Archives de l'année %s"
+
+#: ../archive.php:19
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: ../archive.php:21
+msgid "News"
+msgstr "Actualités"
+
+#: ../footer.php:8
+msgid "All rights reserved"
+msgstr "Tous droits réservés"
+
+#. Name of the template
+msgid "Page mentions légales"
+msgstr "Page mentions légales"
+
+#: ../page-legalterms.php:20
+msgid "Site owner"
+msgstr "Propriétaire"
+
+#: ../page-legalterms.php:44
+msgid "Hoster contact information"
+msgstr "Hébergeur"
+
+#: ../page-legalterms.php:50
+msgid "Website designer contact information"
+msgstr "Concepteur"
+
+#: ../search.php:36
+msgid "Search again?"
+msgstr "Nouvelle recherche ?"
+
+#: ../templates/nav-news.php:4
+msgid "Toutes les actualités"
+msgstr "Toutes les actualités"
+
+#. Name of the theme
+msgid "Starter"
+msgstr "Starter"
+
+#. Theme URI of the theme
+msgid "http://www.biig.fr"
+msgstr "http://www.biig.fr"
+
+#. Description of the theme
+msgid "Un thème Wordpress simple, complet, efficace et stable développé à la main"
+msgstr "Un thème Wordpress simple, complet, efficace et stable développé à la main"
+
+#. Author of the theme
+msgid "BiiG Team"
+msgstr "BiiG Team"
+
+#: ../archive.php:37
+msgid "No news for this moment."
+msgstr "Aucune actualité publiée pour le moment."
+
+#: ../comments.php:8
+#, php-format
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] "Un commentaire sur &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s commentaires sur &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:27
+msgid "Comments are closed."
+msgstr "Les commentaires ne sont pas autorisés."
+
+#: ../header.php:61
+msgid "Back to homepage"
+msgstr "Retour à la page d'accueil"
+
+#. Name of the template
+msgid "Page d'accueil"
+msgstr "Page d'accueil"
+
+#: ../page-legalterms.php:36 ../page-legalterms.php:48 ../page-legalterms.php:55 .
+#: ./templates/widget-address.php:17
+msgid "Phone"
+msgstr "Téléphone"
+
+#: ../page-legalterms.php:40 ../page-legalterms.php:56 ../templates/widget-
+#: address.php:21
+msgid "Fax"
+msgstr "Faxe"
+
+#: ../page-legalterms.php:52 ../templates/social-networks.php:47
+msgid "New window"
+msgstr "Nouvelle fenêtre"
+
+#. Name of the template
+msgid "Page plan du site"
+msgstr "Page plan du site"
+
+#: ../search.php:11
+msgid "Search results"
+msgstr "Résultats de recherche"
+
+#: ../search.php:24
+msgid "There are"
+msgstr "Il y a"
+
+#: ../search.php:26
+msgid " result"
+msgstr " résultat"
+
+#: ../search.php:30
+msgid "for"
+msgstr "pour"
+
+#: ../search.php:47
+msgid "Please be more specific in your search."
+msgstr "Soyez plus précis dans votre recherche."
+
+#: ../searchform.php:4 ../templates/nav-breadcrumb.php:25
+msgid "Search"
+msgstr "Rechercher"
+
+#: ../searchform.php:5 ../templates/single-post.php:9
+msgid "Keywords"
+msgstr "Mots-clés"
+
+#: ../includes/comments.inc.php:25
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de validation."
+
+#: ../includes/comments.inc.php:30
+#, php-format
+msgid "On %1$s at %2$s"
+msgstr "Le %1$s à %2$s"
+
+#: ../includes/comments.inc.php:36
+msgid "Edit"
+msgstr "Editer"
+
+#: ../includes/comments.inc.php:64 ../includes/contact.inc.php:154
+msgid "Name"
+msgstr "Nom"
+
+#: ../includes/comments.inc.php:65
+msgid "Email"
+msgstr "Email"
+
+#: ../includes/comments.inc.php:76
+msgid "Please enter your name."
+msgstr "Saisissez votre nom"
+
+#: ../includes/comments.inc.php:79
+msgid "Please enter your email address."
+msgstr "Saisissez votre adresse mail"
+
+#: ../includes/comments.inc.php:82
+msgid "Please enter valid email."
+msgstr "Saisissez un email valide"
+
+#: ../includes/contact.inc.php:91
+msgid "Sign up for the newsletter"
+msgstr "S'inscrire à la newsletter"
+
+#: ../includes/contact.inc.php:138
+msgid "Mailpoet Signup"
+msgstr "Inscription Mailpoet"
+
+#: ../includes/contact.inc.php:149
+msgid "Required field?"
+msgstr "Champ requis ?"
+
+#: ../includes/contact.inc.php:170
+msgid "Make this checkbox checked by default?"
+msgstr "Cocher la case par défaut ?"
+
+#: ../includes/contact.inc.php:178 ../includes/contact.inc.php:181
+msgid "optional"
+msgstr "optionnel"
+
+#: ../includes/contact.inc.php:188
+msgid "Copy this code and paste it into the form left."
+msgstr "Copiez ce code et collez-le dans le formulaire de gauche."
+
+#: ../includes/contact.inc.php:190
+msgid "And, put this code into the Mail fields below."
+msgstr "Et, mettez ce code dans le champ mail ci-dessous."
+
+#: ../templates/btn-contact-us.php:6
+msgid "Contact-us!"
+msgstr "Contactez-nous !"
+
+#: ../templates/list-news.php:16 ../templates/single-post.php:3
+msgid "The"
+msgstr "Le"
+
+#: ../templates/list-news.php:16 ../templates/single-post.php:3
+msgid "in"
+msgstr "dans"
+
+#: ../templates/list-news.php:32 ../templates/notice-cookie.php:5
+msgid "Read more"
+msgstr "Lire la suite"
+
+#: ../templates/list-results.php:6 ../templates/social-networks.php:6 ..
+#: templates/social-networks.php:24
+msgid "Page"
+msgstr "Page"
+
+#: ../templates/list-results.php:9
+msgid "Blog"
+msgstr "Blog"
+
+#: ../templates/nav-breadcrumb.php:5
+msgid "Back to home page"
+msgstr "Retour à la page d'accueil"
+
+#: ../templates/nav-breadcrumb.php:5
+msgid "Home"
+msgstr "Accueil"
+
+#: ../templates/nav-comment.php:3
+msgid "&larr; Oldest reviews"
+msgstr "&larr; Plus anciens"
+
+#: ../templates/nav-comment.php:4
+msgid "Newest reviews &rarr;"
+msgstr "Plus récents &rarr;"
+
+#: ../templates/nav-news.php:4
+msgid "All news"
+msgstr "Toutes les actualités"
+
+#: ../templates/nav-news.php:7
+msgid "Blog RSS Feed - New window"
+msgstr "Fil RSS des actualités - Nouvelle fenêtre"
+
+#: ../templates/notice-cookie.php:4
+msgid ""
+"By browsing this site, you accept the use of cookies to compile statistics "
+"of attendance and thus improve interest and usability of our services."
+msgstr ""
+"En navigant sur ce site, vous acceptez l'utilisation de cookies pour "
+"compiler des statistiques de fréquentation et ainsi nous permettre "
+"d'améliorer l'intérêt et l'ergonomie de nos services."
+
+#: ../templates/notice-cookie.php:5
+msgid "OK"
+msgstr "OK"
+
+#: ../templates/social-networks.php:12 ../templates/social-networks.php:18 ..
+#: templates/social-networks.php:30 ../templates/social-networks.php:36
+msgid "Profil"
+msgstr "Profil"
+
+#: ../templates/social-networks.php:47
+msgctxt "social-networks"
+msgid "from"
+msgstr "de"

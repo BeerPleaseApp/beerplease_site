@@ -1,0 +1,110 @@
+/**
+ * Commentaires sur les actualités (form et liste)
+ * @name         comment.less
+ * @author       BiiG
+*/
+
+#form-allowed-tags {
+    display: none;
+}
+
+/* Wrapper
+   ========================================================================== */
+.comments {
+    clear: both;
+    margin: 30px 0;
+    padding: 20px;
+    background: #eee;
+    border-top: 2px solid @color-border;
+    .box-sizing();
+    
+    .list {
+        padding: 20px;
+        margin-bottom: 20px;
+        background: #fff;
+    }
+    .children {
+        margin-top: 7px;
+
+        .comment {
+            margin-left: 15px;
+        }
+    }
+    h3 {
+        color: #666;
+    }
+    input[type="text"],
+    input[type="email"] {
+        background: #fff;
+    }
+    textarea {
+        background: #fff;
+        resize: vertical;
+    }
+}
+
+/* Item
+   ========================================================================== */
+.comment {
+    list-style-type: none !important;
+    margin-left: 0 !important;
+    clear: both;
+
+    + .comment {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee;
+    }
+
+    .author-avatar {
+        float: left;
+        margin-right: 15px;
+        width: 75px;
+
+        img {
+            display: block;
+        }
+    }
+    .comment-date {
+        color: @color-muted;
+
+        .fn {
+            color: @color-primary;
+            font-weight: bold;
+        }
+    }
+    .reply a {
+        color: @color-muted;
+        .em-size(11);
+        .transition(all .2s);
+
+        &:hover {
+            color: #666;
+        }
+    }
+}
+
+/* Form
+   ========================================================================== */
+#cancel-comment-reply-link {
+    float: right;
+    .btn();
+    font-size: .8em;
+}
+.comment-respond {
+    padding-top: 25px;
+    .clearfix();
+}
+.comment-form {
+    label {
+        clear: both;
+        margin: 10px 0;
+        color: #333;
+        .em-size();
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 15px;
+    }
+}

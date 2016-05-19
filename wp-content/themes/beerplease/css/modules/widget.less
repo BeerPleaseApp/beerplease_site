@@ -1,0 +1,69 @@
+/**
+ * Widgets
+ * @name         widget.less
+ * @author       BiiG
+*/
+
+.widget {    
+    ul {
+        .em-size(13);
+        
+        ul {
+            margin-top: 5px;
+            .em-size();
+        }
+    }
+    li {
+        color: #999;
+        list-style: disc outside;
+        margin: 0 0 5px 16px;
+        line-height: 1.2;
+        .transition(all .2s);
+
+        &:hover {
+            color: #333;
+        }
+
+        a {
+            color: @color-primary;
+            border-bottom: 1px dotted @color-secondary;
+            .transition(color .2s);
+
+            &:hover {
+                color: @color-secondary;
+                border-bottom-style: solid;
+            }
+        }
+    }
+
+    + .widget {
+        margin-top: 15px;
+        padding-top: 15px;
+    }
+
+    .single & {
+        ul {
+            margin: 0;
+
+            > li:not(.list-item) {
+                .em-size();
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Widget Adresse
+   ========================================================================== */
+.widget-address {
+    p {
+        line-height: 1.4;
+        font-family: @fontRegular;
+        .em-size(12);
+    }
+    strong {
+        display: inline-block;
+        .em-size();
+        margin-bottom: 5px;
+    }
+}

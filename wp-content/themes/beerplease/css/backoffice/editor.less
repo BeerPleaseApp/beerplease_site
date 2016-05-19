@@ -1,0 +1,50 @@
+/**
+ * Editeur TinyMCE WordPress
+ * @name         admin.less
+ * @author       BiiG
+*/
+
+html .mceContentBody {
+    max-width:100%;
+}
+
+* {
+    font-family: Helvetica, Arial, Verdana !important;
+    color: #000;
+}
+
+// Main colors
+@color-primary: tomato;
+@color-secondary: darken(tomato, 10%);
+@color-third: #000;
+@color-muted: #999;
+@color-border: #ddd;
+
+// Titles
+@color-h2: #555;
+@color-h3: #777;
+@color-h4: #999;
+
+// Font text
+@fontRegular: 'Arvo', 'Georgia', serif;
+@fontRegularAlt: 'Open Sans', 'Arial', 'Verdana', sans-serif;
+
+// Font size
+@baseFontSize: 16;
+.em-size( @value: @baseFontSize) {
+	font-size: (@value / @baseFontSize) + 0em;
+}
+
+// Transition
+.transition(@arguments) {
+	-webkit-transition: @arguments;
+	transition: @arguments;
+}
+
+// Responsive breakpoints
+@smartphone: 767px;
+@grid-float-breakpoint: 769px;
+
+@import url("../modules/typography");
+
+

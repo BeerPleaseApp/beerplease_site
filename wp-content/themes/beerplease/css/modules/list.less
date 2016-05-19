@@ -1,0 +1,126 @@
+/**
+ * Listes
+ * @name         list.less
+ * @author       BiiG
+*/
+
+.list {
+    clear: both;
+    margin: 0 !important;
+    padding-left: 0;
+}
+.item-image {
+    img {
+        display: block;
+    }
+}
+.list-item {
+    position: relative;
+    list-style-type: none;
+    padding-left: 0;
+    
+    + .list-item {
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #eee !important;
+    }
+
+    a {
+        border: 0 !important;
+        .transition(color .2s);
+    }
+    .item-title,
+    .item-infos {
+        margin-bottom: 5px;
+    }
+    .item-image {
+        float: right;
+        margin-left: 35px;
+    }
+    .item-type {
+        text-transform: uppercase;
+    }
+    .item-title {
+        a {
+            color: #666;
+
+            &:hover,
+            &:focus {
+                color: @color-primary;
+            }
+        }
+    }
+    .item-url {
+        font-size: 1em;
+        margin-top: -8px;
+    }
+    &.is-link:hover .item-title a {
+        color: @color-primary;
+    }
+    .item-infos {
+        color: @color-muted;
+
+        a {
+            color: inherit;
+
+            &:hover {
+                color: #666;
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   List news
+   ========================================================================== */
+.list-news {
+    .list-item {
+        .item-image {
+            float: right;   
+            margin-top: -50px;
+        }
+    }
+}
+
+/* ==========================================================================
+   List search results
+   ========================================================================== */
+.list-search-results {
+    .list-item {
+        h2,
+        p {
+            margin-bottom: 5px !important;
+        }
+
+        h2 {
+            font-family: @fontRegularAlt;
+            .em-size();
+        }
+
+        p.item-url {
+            .em-size(13);
+            margin: 3px 0;
+            
+            a {
+                color: #999;
+                border: 0;
+                .transition(color .2s);
+                
+                &:hover {
+                    color: #666;
+                    border: 0;
+                }
+            }
+        }
+        
+        &:hover {
+            h2 a {
+                border-bottom-style: solid;
+            }
+            
+            p.item-url a {
+                color: #666;
+            }
+        }
+    }
+}

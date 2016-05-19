@@ -1,0 +1,359 @@
+/**
+ * Navigation et menus
+ * @name         nav.less
+ * @author       BiiG
+*/
+
+/* ==========================================================================
+   Navigation principale
+   ========================================================================== */
+.nav-main {
+    a {
+        display: block;
+        font-family: @fontRegular;
+    }
+    .menu-item {
+        display: block;
+    }
+    
+    > ul {
+        margin: 0;
+        padding: 0;
+        .clearfix();
+
+        > .menu-item {
+            position: relative;
+            float: left;
+            text-align: center;
+
+            &.current-menu-item > a {
+                color: @color-primary;
+                border-bottom: 0;
+            }
+
+            > a {
+                position: relative;
+                color: #666;
+                padding: 10px;
+                text-transform: uppercase;
+                border-bottom: 0;
+                .em-size(15);
+                .transition(all .3s);
+
+                &:hover,
+                &:focus {
+                    color: #fff;
+                    background-color: @color-primary;
+                    border-bottom: 0;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+    .sub-menu {
+        position: absolute;
+        top: 41px;
+        left: 0;
+        z-index: 50;
+        display: none;
+        padding: 5px 10px 10px;
+        width: 222px;
+        background: #fff;
+        border: 1px solid @color-border;
+
+        > .menu-item {
+            a {
+                padding: 10px 0;
+                color: #333;
+                text-align: left;
+                .em-size(13);
+                .transition(color .2s);
+                
+                li.current-menu-item&,
+                &:hover,
+                &:focus {
+                    color: @color-primary;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: @tabletMin) {
+        display: block;
+
+        .sub-menu {
+            li {
+                position: relative;
+
+                .sub-menu {
+                    top: -6px;
+                    left: 233px;
+                }
+            }
+
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Navigation secondaire
+   ========================================================================== */
+.nav-secondary {
+    display: none;
+    min-height: 200px;
+    margin-bottom: 25px;
+
+    a {
+        display: block;
+        color: #ccc;
+        font-family: @fontRegular;
+        .em-size(12);
+
+        &:hover,
+        &:focus {
+            color: #fff;
+        }
+    }
+
+    > .menu-item {
+        display: block;
+        float: left;
+        list-style-type: none;
+        margin: 0 15px 20px 0;
+        min-width: 137px;
+        .em-size();
+
+        > a {
+            padding-bottom: 8px;
+            text-transform: uppercase;
+            border-bottom: 1px solid #666;
+            .transition(color .2s);
+        }
+    }
+    .sub-menu {
+        padding-top: 10px;
+
+        a {
+            padding-bottom: 5px;
+            .transition(all .2s);
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: @tabletMin) {
+    .nav-secondary {
+        display: block;
+    }
+}
+
+/* ==========================================================================
+   Navigation footer
+   ========================================================================== */
+.nav-footer {
+    margin: 25px 0 0;
+
+    p {
+        margin: 0 0 0 10px;
+        color: @color-muted;
+        .em-size(12);
+    }
+    ul {
+        margin-bottom: 15px;
+    }
+    a {
+        color: @color-muted;
+        .transition(color .2s);
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+    .menu-item {
+        display: inline-block;
+        .em-size(12);
+
+        a {
+            color: #ccc;
+
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+
+        + .menu-item {
+            &:before {
+                content: "-";
+                display: inline-block;
+                padding: 0 5px;
+                color: @color-muted;
+            }
+        }
+
+        &:first-child {
+            padding-left: 5px;
+        }
+    }
+}
+@media screen and (min-width: @tabletMin) {
+    .nav-footer {
+        margin: 0;
+
+        ul,
+        p {
+            float: right;
+        }
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* ==========================================================================
+   Navigation fil d'ariane
+   ========================================================================== */
+.nav-breadcrumb ol {
+    padding-left: 0;
+}
+.nav-breadcrumbItem {
+    display: inline-block;
+    color: #666;
+    font-family: @fontRegular;
+    .em-size(12);
+
+    a {
+        color: #666;
+        .transition(color .2s);
+
+        &:hover,
+        &:focus {
+            color: #333;
+        }
+    }
+
+    span {
+        display: inline-block;
+        padding: 0 3px 0 5px;
+    }
+}
+
+/* ==========================================================================
+   Navigation pagination
+   ========================================================================== */
+/*
+markup:
+<div class="nav nav-pager">
+    <div class="wp-pagenavi">
+        <a class="previouspostslink" href=""></a>
+        <span class="current">1</span>
+        <a class="page" href="">2</a>
+        <a class="nextpostslink" href=""></a>
+    </div>
+</div>
+ 
+Styleguide Navigation - 3. Pagination
+*/
+.nav-pager {
+    float: right;
+    clear: both;
+    padding: 7px 0;
+
+    .wp-pagenavi {
+        .pages {
+            display: none;
+        }
+        span,
+        a {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            padding: 0;
+            color: @color-primary;
+            font-family: @fontRegular;
+            text-align: center;
+            border: 0;
+            .em-size(13);
+            .transition(all .2s);
+
+            &:hover,
+            &:focus,
+            &.current {
+                color: #fff;
+                font-weight: normal;
+                background: @color-primary;
+            }
+
+            &.first,
+            &.last {
+                width: auto;
+                padding: 0 10px;
+            }
+        }
+
+        .previouspostslink,
+        .nextpostslink {
+            &:before {
+                position: relative;
+                top: 2px;
+                left: 3px;
+                color: @color-primary;
+
+            }
+            &:hover,
+            &:focus {
+                &:before {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+/* ==========================================================================
+   Navigation actualités
+   ========================================================================== */
+.nav-news {
+    display: inline-block;  
+    float: right;   
+
+    ul {
+        float: right;
+        margin: 0;  
+    }
+    li {
+        display: inline-block;
+    }
+    .icon-feed:before {
+        top: -2px; 
+    }
+
+    .single & {
+        ul {
+            margin: 0;  
+                
+            > li:not(.list-item) {
+                margin: 0;  
+                .em-size();
+
+                a {
+                    border: 0;
+
+                    &:hover {
+                        color: #fff;
+                        border: 0;
+                    }
+                }
+            }
+        }
+    }
+}

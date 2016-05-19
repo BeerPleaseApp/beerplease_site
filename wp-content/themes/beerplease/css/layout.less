@@ -1,0 +1,103 @@
+/**
+ * Layout et positionnement général
+ * @name         layout.less
+ * @author       BiiG
+*/
+
+/* ==========================================================================
+	BASE
+	========================================================================== */
+body {
+	font-size: unit(@baseFontSize, px);
+	color: @color-text;
+	background: @color-bg-body;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+::-moz-selection {
+	color: #fff;
+	background-color: lighten(@color-selection, 10%);
+}
+::selection {
+	color: #fff;
+	background-color: lighten(@color-selection, 10%);
+}
+
+a {
+	color: @color-primary;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: @color-primary;
+	}
+}
+
+/*
+	ALIGNMENT
+*/
+.alignleft {
+	float: left;
+
+	img& {
+		margin: 0 15px 15px 0;
+	}
+}
+.alignright {
+	float: right;
+
+	img& {
+		margin: 0 0 15px 15px;
+	}
+}
+
+/*
+	STATES
+*/
+.is-link {
+	cursor: pointer;
+}
+.is-visuallyHidden {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	clip: rect(1px, 1px, 1px, 1px);
+	overflow: hidden;
+}
+.is-mobile {
+	display: block;
+	
+	@media screen and (min-width: @tabletMin) {
+		display: none;
+	}
+}
+
+/* ==========================================================================
+	HEADER
+	========================================================================== */
+.header {
+  background: #eee;
+}
+
+
+/* ==========================================================================
+	CONTENT
+	========================================================================== */
+.main {
+	background: @color-bg-main;
+
+}
+.main-inner {
+	background: @color-bg-body;
+	padding: 20px 0;
+	.box-sizing();
+	.clearfix();
+}
+
+
+/* ==========================================================================
+	FOOTER
+	========================================================================== */
+.footer {
+
+}

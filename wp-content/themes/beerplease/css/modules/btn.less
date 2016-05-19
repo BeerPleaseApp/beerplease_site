@@ -1,0 +1,121 @@
+/*
+Styleguide Boutons
+*/
+
+/*
+Bouton par défaut
+
+Markup:
+<span class="btn $modifierClass">Bouton</span>
+
+.btn-small              - Bouton petit
+.btn-big                - Bouton gros
+.btn-alt                - Variante bouton par défaut
+
+Styleguide Boutons - Bouton standard et secondaire
+*/
+
+.btn {
+    text-transform: uppercase;
+    background: @color-primary;
+    border: 2px solid @color-primary;
+    color: #fff !important;
+    font-weight: bold;
+    font-family: @fontRegular;
+    .em-size(16);
+    padding: 7px 15px;
+    border-radius: 0;
+    cursor: pointer;
+    text-decoration: none !important;
+    .transition(all .2s);
+
+    &.active,
+    &:focus,
+    &:hover {
+        background: #fff;
+        color: @color-primary !important;
+        .box-shadow(0 0 0 @color-primary);
+    }
+}
+
+@media screen and (min-width: @tabletMin) {
+    .btn {
+        .em-size(18);
+        padding: 10px 20px;
+    }
+}
+
+/* ==========================================================================
+   Bouton secondaire
+   ========================================================================== */
+.btn-alt {
+    background: #fff;
+    color: @color-primary !important;
+
+    &.active,
+    &:focus,
+    &:hover {
+        background: @color-primary;
+        color: #fff !important;
+    }
+}
+
+/* ==========================================================================
+   Variantes taille
+   ========================================================================== */
+/* Big button */
+.btn-big {
+    .em-size(22);
+    padding: 15px 30px;
+}
+
+/* Small button */
+.btn-small {
+    .em-size(14);
+    padding: 5px 10px;
+}
+
+/* ==========================================================================
+   Variantes diverses
+   ========================================================================== */
+.btn-feed {
+    padding: 6px 4px;
+
+    &:hover,
+    &:focus {
+        background-color: #f08a22;
+    }
+}
+.btn-player {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 2px;
+
+    .l-grid & {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 5;
+        margin: -24px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: rgba(255, 255, 255, .5);
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 10;
+        margin: -12px -7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12px 0 12px 18px;
+        border-color: transparent transparent transparent #fff;
+    }
+}
