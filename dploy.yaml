@@ -9,4 +9,4 @@ prod:
     path:
         remote: "/home/beerplease/public_html/dev/" # chemin du site de PROD
     options:
-    exclude: ["dploy.yaml", "wp-config.php", ".gitignore", ".htaccess", "bower.json", ".bowerrc", "package.json", "gulpfile.js"]
+    exclude: ["dploy.yaml", "wp-config.php", ".gitignore", "composer.*", ".htaccess", "bower.json", ".bowerrc", "package.json", "gulpfile.js"]
