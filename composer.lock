@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "43c77e3b6b01595068a957b3c10349be",
-    "content-hash": "5cb12e9d139a463a24326c0ca93a7fa8",
+    "hash": "ff7c2edb59452a44a74b0654d9663c0a",
+    "content-hash": "0c887833c286cd1db7b52a8a6bced74b",
     "packages": [
         {
             "name": "acf-repeater-plugin",
@@ -231,46 +231,6 @@
             "time": "2015-06-11 15:15:30"
         },
         {
-            "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.5",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "tags/4.4.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
-        },
-        {
-            "name": "wpackagist-plugin/akismet",
-            "version": "3.1.7",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.1.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/akismet/"
-        },
-        {
             "name": "wpackagist-plugin/duplicate-post",
             "version": "2.6",
             "source": {
@@ -289,26 +249,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/duplicate-post/"
-        },
-        {
-            "name": "wpackagist-plugin/enable-media-replace",
-            "version": "3.0.4",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/enable-media-replace/",
-                "reference": "tags/3.0.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/enable-media-replace.3.0.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/enable-media-replace/"
         },
         {
             "name": "wpackagist-plugin/imsanity",
@@ -391,26 +331,6 @@
             "homepage": "https://wordpress.org/plugins/login-lockdown/"
         },
         {
-            "name": "wpackagist-plugin/parent-category-toggler",
-            "version": "1.3.3",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/parent-category-toggler/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/parent-category-toggler.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/parent-category-toggler/"
-        },
-        {
             "name": "wpackagist-plugin/regenerate-thumbnails",
             "version": "2.2.6",
             "source": {
@@ -451,46 +371,6 @@
             "homepage": "https://wordpress.org/plugins/tinymce-advanced/"
         },
         {
-            "name": "wpackagist-plugin/user-role-editor",
-            "version": "4.23.2",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/user-role-editor/",
-                "reference": "tags/4.23.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-role-editor.4.23.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/user-role-editor/"
-        },
-        {
-            "name": "wpackagist-plugin/user-switching",
-            "version": "1.0.9",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/user-switching/",
-                "reference": "tags/1.0.9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/user-switching.1.0.9.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/user-switching/"
-        },
-        {
             "name": "wpackagist-plugin/wordpress-importer",
             "version": "0.6.1",
             "source": {
@@ -529,26 +409,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-pagenavi",
-            "version": "2.89.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-pagenavi/",
-                "reference": "tags/2.89.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-pagenavi.2.89.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-pagenavi/"
         },
         {
             "name": "wpackagist-plugin/wp-super-cache",
