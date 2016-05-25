@@ -17,9 +17,9 @@
     "wpackagist-plugin/loco-translate": "^1.5",
     "wpackagist-plugin/login-lockdown": "1.6",
     "wpackagist-plugin/regenerate-thumbnails": "^2.2.4",
-    "wpackagist-plugin/tinymce-advanced": "^4.2.5",
+    "wpackagist-plugin/tinymce-advanced": "^4.2",
     "wpackagist-plugin/wordpress-importer": "^0.6.1",
-    "wpackagist-plugin/wordpress-seo": "^3.0.5",
+    "wpackagist-plugin/wordpress-seo": "^3.1",
     "wpackagist-plugin/wp-super-cache": "^1.4.6",
     "acf-repeater-plugin": "^1.0"
   },

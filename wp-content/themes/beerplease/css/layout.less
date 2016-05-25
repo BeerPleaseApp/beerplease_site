@@ -76,7 +76,48 @@ a {
 	HEADER
 	========================================================================== */
 .header {
-  background: #eee;
+	position: relative;
+	z-index: 10;
+  	height: 100vh;
+  	overflow-y: hidden;
+  	text-align: center;
+}
+
+.header-image {
+	position: absolute;
+	display: block;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+  	background-image: url(../../images/background-beer.jpg);
+  	background-position: center center;
+	//background-size: cover;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	.blur(5px);
+
+	@media screen and (min-width: @tabletMin) {
+		background-size: 100% auto;
+	}
+}
+
+.header-background {
+	position: absolute;
+	display: block;
+	z-index: 5;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, .7);
+}
+
+.header-inner {
+	position: relative;
+	z-index: 10;
+	height: 100%;
 }
 
 
@@ -88,16 +129,24 @@ a {
 
 }
 .main-inner {
+	position: relative;
+	z-index: 15;
 	background: @color-bg-body;
-	padding: 20px 0;
 	.box-sizing();
 	.clearfix();
 }
 
+// begin PROVISOIRE ################################
+.content-inner > section {
+	min-height: 400px;
+	border-bottom: 3px solid #eee;
+	padding: 40px 0;
+}
+// end PROVISOIRE ################################
 
 /* ==========================================================================
 	FOOTER
 	========================================================================== */
 .footer {
-
+	background-color: #000;
 }

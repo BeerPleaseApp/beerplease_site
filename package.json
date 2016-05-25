@@ -4,29 +4,21 @@
   "version": "1.0.0",
   "contributors": [
     {
-      "name": "Gaetan MARSAULT",
-      "email": "gaetan.marsault@biig.fr"
-    },
-    {
-      "name": "François THIBAUD",
-      "email": "francois.thibaud@biig.fr"
-    },
-    {
-      "name": "Mark LUCAS",
-      "email": "mark.lucas@biig.fr"
+      "name": "Beer Please",
+      "email": "beerplease.app@gmail.com"
     }
   ],
   "devDependencies": {
-    "del": "2.0.2",
-    "gulp": "^3.9.0",
-    "gulp-replace": "^0.5.4",
-    "gulp-rename": "^1.2.2",
-    "gulp-less": "^3.0.5",
-    "less-plugin-clean-css": "^1.5.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
-    "gulp-concat-css": "^2.2.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-less": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
     "gulp-uglyfly": "^1.4.2",
-    "gulp-imagemin": "^2.4.0",
-    "run-sequence": "^1.1.5"
+    "less-plugin-clean-css": "^1.5.1",
+    "run-sequence": "^1.2.0"
   }
 }

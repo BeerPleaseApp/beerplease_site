@@ -6,8 +6,7 @@ add_action('init', function() {
     if (is_admin()) {
         wp_enqueue_style('theme-admin', get_stylesheet_directory_uri() . '/css/min/admin.min.css', array(), filemtime(realpath(dirname(__FILE__)."/../")."/css/min/admin.min.css"));
     } else {
-        wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Arvo:400,400italic,700');
-        wp_enqueue_style('google-font-2', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700');
+        wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Montserrat:400,700');
         wp_enqueue_style('theme-main', get_stylesheet_directory_uri() . '/css/min/styles.min.css', array(), filemtime(realpath(dirname(__FILE__)."/../")."/css/min/styles.min.css"));
     }
 });

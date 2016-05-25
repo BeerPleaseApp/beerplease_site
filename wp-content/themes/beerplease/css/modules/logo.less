@@ -5,37 +5,55 @@
  * @requires     styles.less
  */
 
-.logo {
+.logo-main {
+    display: block;
+    text-align: center;
+
     img {
-        display: block;
-        max-width: 70%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -80px;
+        margin-top: -210px;
+        display: inline-block;
         height: auto;
+        width: 160px;
     }
 }
-.logo-main {
-    float: left;
-}
 .logo-baseline {
-    display: none;
+    text-align: center;
+    font-family: @fontRegular;
+    color: #fff;
+
+    p {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        line-height: 1.3em;
+        width: 260px;
+        margin-top: -10px;
+        margin-bottom: 30px;
+        margin-left: -130px;
+        display: inline-block;
+        .em-size(16);
+    }
 }
 
 @media screen and (min-width: @tabletMin) {
-    .logo {
+    .logo-main {
         img {
-            max-width: inherit;
+            width: 260px;
+            margin-left: -125px;
+            margin-top: -300px;
         }
     }
-    .logo-main {
-        margin-right: 25px;
-    }
     .logo-baseline {
-        display: block;
-        float: left;
-        margin-bottom: 0;
-        line-height: 65px;
-        color: @color-h3;
-        font-family: @fontRegular;
-        text-transform: uppercase; 
-        .em-size(14);
+        p {
+            width: 300px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            margin-left: -150px;
+            .em-size(20);
+        }
     }
 }

@@ -4,24 +4,28 @@
  * @author       BiiG
 */
 
-@color-admin: #228eab;
-@color-admin-hover: #136378;
+@color-admin: #f7b000;
+@color-admin-hover: darken(@color-admin, 10%);
 
 .login {
-    background: #fff;
+    background: #000;
 
     .message {
         border-left-color: @color-admin;
     }
     h1 > a {
         width: 100%;
-        height: 114px;
-        background-image: url("../../images/logos/logo-login.png");
-        background-size: auto;
+        height: 200px;
+        background-image: url("../../images/logos/logo.svg");
+        background-size: 50% auto;
+        background-position: center center;
     }
     input:focus {
         border-color: #999;
         box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    }
+    p {
+        font-size: 14px;
     }
     #backtoblog,
     #nav {
@@ -38,6 +42,7 @@
         background: @color-admin;
         border: 0;
         box-shadow: none;
+        text-shadow: 1px 1px 1px @color-admin-hover;
 
         &:hover,
         &:focus {

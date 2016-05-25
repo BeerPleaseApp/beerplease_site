@@ -8,91 +8,51 @@
    Navigation principale
    ========================================================================== */
 .nav-main {
-    a {
-        display: block;
-        font-family: @fontRegular;
-    }
-    .menu-item {
-        display: block;
-    }
-    
-    > ul {
-        margin: 0;
+    ul {
+        margin: 30px 0;
         padding: 0;
         .clearfix();
 
-        > .menu-item {
+        li {
+            list-style-type: none;
             position: relative;
-            float: left;
+            display: inline-block;
             text-align: center;
+            margin: 0 10px;
+            font-family: @fontRegular;
 
+            a {
+                position: relative;
+                color: #fff;
+                padding: 5px 0;
+                text-transform: uppercase;
+                border-bottom: 0;
+                .em-size(15);
+                .transition(all .2s);
+
+                &:hover,
+                &:focus {
+                    color: #fff;
+                    border-bottom: 3px solid #fff;
+                    text-decoration: none;
+                }
+            }
+            
             &.current-menu-item > a {
                 color: @color-primary;
                 border-bottom: 0;
             }
 
-            > a {
-                position: relative;
-                color: #666;
-                padding: 10px;
-                text-transform: uppercase;
-                border-bottom: 0;
-                .em-size(15);
-                .transition(all .3s);
-
-                &:hover,
-                &:focus {
-                    color: #fff;
-                    background-color: @color-primary;
-                    border-bottom: 0;
-                    text-decoration: none;
-                }
+            &:last-child {
+                margin-right: 0;
             }
 
-        }
-    }
-    .sub-menu {
-        position: absolute;
-        top: 41px;
-        left: 0;
-        z-index: 50;
-        display: none;
-        padding: 5px 10px 10px;
-        width: 222px;
-        background: #fff;
-        border: 1px solid @color-border;
-
-        > .menu-item {
-            a {
-                padding: 10px 0;
-                color: #333;
-                text-align: left;
-                .em-size(13);
-                .transition(color .2s);
-                
-                li.current-menu-item&,
-                &:hover,
-                &:focus {
-                    color: @color-primary;
-                }
-            }
         }
     }
 
     @media screen and (min-width: @tabletMin) {
-        display: block;
-
-        .sub-menu {
-            li {
-                position: relative;
-
-                .sub-menu {
-                    top: -6px;
-                    left: 233px;
-                }
-            }
-
-        }
+        float: right;
+        display: inline-block;
     }
 }
 
