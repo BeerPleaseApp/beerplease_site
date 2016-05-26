@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: Maif\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Mon Aug 03 2015 16:11:13 GMT+0200 (CEST)\n"
-"PO-Revision-Date: Thu Feb 11 2016 16:41:33 GMT+0100 (CET)\n"
-"Last-Translator: BiiG BiiG <www@biig.fr>\n"
+"PO-Revision-Date: Thu May 26 2016 23:13:02 GMT+0200 (CEST)\n"
+"Last-Translator: Beer Please <beerplease.app@gmail.com>\n"
 "Language-Team: \n"
 "Language: French (France)\n"
 "Plural-Forms: nplurals=2; plural=n > 1\n"
@@ -21,6 +21,22 @@ msgstr ""
 "esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
 "X-Generator: Loco - https://localise.biz/\n"
 "X-Loco-Target-Locale: fr_FR"
+
+#: ../header.php:80
+msgid "Available on the"
+msgstr "Disponible sur"
+
+#: ../header.php:81
+msgid "App Store"
+msgstr "Apple Store"
+
+#: ../header.php:86
+msgid "Available on"
+msgstr "Disponible sur"
+
+#: ../header.php:87
+msgid "Google Play"
+msgstr "Google Play"
 
 #. Name of the template
 msgid "Actualités"
@@ -55,50 +71,6 @@ msgstr "Y"
 msgid "News"
 msgstr "Actualités"
 
-#: ../footer.php:8
-msgid "All rights reserved"
-msgstr "Tous droits réservés"
-
-#. Name of the template
-msgid "Page mentions légales"
-msgstr "Page mentions légales"
-
-#: ../page-legalterms.php:20
-msgid "Site owner"
-msgstr "Propriétaire"
-
-#: ../page-legalterms.php:44
-msgid "Hoster contact information"
-msgstr "Hébergeur"
-
-#: ../page-legalterms.php:50
-msgid "Website designer contact information"
-msgstr "Concepteur"
-
-#: ../search.php:36
-msgid "Search again?"
-msgstr "Nouvelle recherche ?"
-
-#: ../templates/nav-news.php:4
-msgid "Toutes les actualités"
-msgstr "Toutes les actualités"
-
-#. Name of the theme
-msgid "Starter"
-msgstr "Starter"
-
-#. Theme URI of the theme
-msgid "http://www.biig.fr"
-msgstr "http://www.biig.fr"
-
-#. Description of the theme
-msgid "Un thème Wordpress simple, complet, efficace et stable développé à la main"
-msgstr "Un thème Wordpress simple, complet, efficace et stable développé à la main"
-
-#. Author of the theme
-msgid "BiiG Team"
-msgstr "BiiG Team"
-
 #: ../archive.php:37
 msgid "No news for this moment."
 msgstr "Aucune actualité publiée pour le moment."
@@ -114,13 +86,25 @@ msgstr[1] "%1$s commentaires sur &ldquo;%2$s&rdquo;"
 msgid "Comments are closed."
 msgstr "Les commentaires ne sont pas autorisés."
 
-#: ../header.php:61
+#: ../footer.php:8
+msgid "All rights reserved"
+msgstr "Tous droits réservés"
+
+#: ../header.php:64
 msgid "Back to homepage"
 msgstr "Retour à la page d'accueil"
 
 #. Name of the template
 msgid "Page d'accueil"
 msgstr "Page d'accueil"
+
+#. Name of the template
+msgid "Page mentions légales"
+msgstr "Page mentions légales"
+
+#: ../page-legalterms.php:20
+msgid "Site owner"
+msgstr "Propriétaire"
 
 #: ../page-legalterms.php:36 ../page-legalterms.php:48 ../page-legalterms.php:55 .
 #: ./templates/widget-address.php:17
@@ -132,13 +116,17 @@ msgstr "Téléphone"
 msgid "Fax"
 msgstr "Faxe"
 
+#: ../page-legalterms.php:44
+msgid "Hoster contact information"
+msgstr "Hébergeur"
+
+#: ../page-legalterms.php:50
+msgid "Website designer contact information"
+msgstr "Concepteur"
+
 #: ../page-legalterms.php:52 ../templates/social-networks.php:47
 msgid "New window"
 msgstr "Nouvelle fenêtre"
-
-#. Name of the template
-msgid "Page plan du site"
-msgstr "Page plan du site"
 
 #: ../search.php:11
 msgid "Search results"
@@ -155,6 +143,10 @@ msgstr " résultat"
 #: ../search.php:30
 msgid "for"
 msgstr "pour"
+
+#: ../search.php:36
+msgid "Search again?"
+msgstr "Nouvelle recherche ?"
 
 #: ../search.php:47
 msgid "Please be more specific in your search."
@@ -271,6 +263,10 @@ msgid "Newest reviews &rarr;"
 msgstr "Plus récents &rarr;"
 
 #: ../templates/nav-news.php:4
+msgid "Toutes les actualités"
+msgstr "Toutes les actualités"
+
+#: ../templates/nav-news.php:4
 msgid "All news"
 msgstr "Toutes les actualités"
 
@@ -300,3 +296,19 @@ msgstr "Profil"
 msgctxt "social-networks"
 msgid "from"
 msgstr "de"
+
+#. Name of the theme
+msgid "Starter"
+msgstr "Starter"
+
+#. Theme URI of the theme
+msgid "http://www.biig.fr"
+msgstr "http://www.biig.fr"
+
+#. Description of the theme
+msgid "Un thème Wordpress simple, complet, efficace et stable développé à la main"
+msgstr "Un thème Wordpress simple, complet, efficace et stable développé à la main"
+
+#. Author of the theme
+msgid "BiiG Team"
+msgstr "BiiG Team"

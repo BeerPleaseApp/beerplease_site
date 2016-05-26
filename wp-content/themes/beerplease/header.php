@@ -58,27 +58,47 @@
             <div class="header-background"></div>
             <div class="header-inner container">
                 <div class="row">
-                    <div class="logo logo-main">
-                        <?php if (!is_front_page()): ?>
-                            <a href="<?php bloginfo('url'); ?>" title="<?php echo __('Back to homepage', 'wpstartertheme'); ?>" rel="home">
+                    <div class="header-left col-md-9">
+                        <div class="logo logo-main">
+                            <?php if (!is_front_page()): ?>
+                                <a href="<?php bloginfo('url'); ?>" title="<?php echo __('Back to homepage', 'wpstartertheme'); ?>" rel="home">
+                            <?php endif; ?>
+                                   <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logos/logo.svg" alt="Logo <?php echo get_bloginfo('name'); ?>" />
+                            <?php if (!is_front_page()): ?>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+
+                        <?php if($baseline = get_bloginfo('description')) : ?>
+                            <div class="logo logo-baseline">
+                                <p><?php echo $baseline; ?></p>
+                            </div>
                         <?php endif; ?>
-                               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/logos/logo.svg" alt="Logo <?php echo get_bloginfo('name'); ?>" />
-                        <?php if (!is_front_page()): ?>
-                            </a>
-                        <?php endif; ?>
+                        <ul class="downloads">
+                            <li>
+                                <a class="btn btn-download btn-download-appstore" href="http://www.apple.com">
+                                    <span class="available"><?php _e("Available on the", "wpstartertheme"); ?></span>
+                                    <span class="platform"><?php _e("App Store", "wpstartertheme"); ?></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-download btn-download-googleplay" href="http://www.apple.com">
+                                    <span class="available"><?php _e("Available on", "wpstartertheme"); ?></span>
+                                    <span class="platform"><?php _e("Google Play", "wpstartertheme"); ?></span>
+                                </a>
+                            </li>   
+                        </ul>
+                    </div>
+                    <div class="header-right col-md-3">
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/iphone.svg" alt="Capture écran de l'application" />
                     </div>
 
-                    <?php if($baseline = get_bloginfo('description')) : ?>
-                        <div class="logo logo-baseline">
-                            <p><?php echo $baseline; ?></p>
-                        </div>
-                    <?php endif; ?>
                 </div>
                 <nav class="nav nav-main row clearfix" role="navigation">
                     <?php
                         $arg = array(
-                            'theme_location'	=> 'menu-primary',
-                            'container' 	    => false,
+                            'theme_location'    => 'menu-primary',
+                            'container'         => false,
                             'items_wrap'        => '<ul>%3$s</ul>',
                             'depth'             => 1
                         );

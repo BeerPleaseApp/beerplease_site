@@ -1,7 +1,7 @@
 /**
  * Navigation et menus
  * @name         nav.less
- * @author       BiiG
+ * @author       Beer Please
 */
 
 /* ==========================================================================
@@ -26,14 +26,14 @@
                 color: #fff;
                 padding: 5px 0;
                 text-transform: uppercase;
-                border-bottom: 0;
+                border-bottom: 2px solid transparent;
                 .em-size(15);
                 .transition(all .2s);
 
                 &:hover,
                 &:focus {
                     color: #fff;
-                    border-bottom: 3px solid #fff;
+                    border-bottom: 2px solid #fff;
                     text-decoration: none;
                 }
             }
@@ -51,8 +51,9 @@
     }
 
     @media screen and (min-width: @tabletMin) {
-        float: right;
-        display: inline-block;
+        ul {
+            margin-top: 90px;
+        }
     }
 }
 

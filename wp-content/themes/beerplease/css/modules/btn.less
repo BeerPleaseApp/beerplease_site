@@ -34,7 +34,6 @@ Styleguide Boutons - Bouton standard et secondaire
     &:hover {
         background: #fff;
         color: @color-primary !important;
-        .box-shadow(0 0 0 @color-primary);
     }
 }
 
@@ -73,6 +72,82 @@ Styleguide Boutons - Bouton standard et secondaire
 .btn-small {
     .em-size(14);
     padding: 5px 10px;
+}
+
+/* ==========================================================================
+   Downloads btn
+   ========================================================================== */
+.btn-download {
+    position: relative;
+    background-color: #000;
+    border: 0;
+    text-align: left;
+    border-radius: 10px;
+    padding-left: 60px;
+    margin: 7px;
+
+    span {
+        display: block;
+        clear: left;
+        line-height: 1.2;
+
+        &.available {
+            text-transform: none;
+            font-weight: normal;
+            .em-size(12);
+        }
+    }
+
+    &:before {
+        position: absolute;
+        left: 15px;
+        top: 3px;
+        font-weight: normal;
+        content: '\f019';
+        font-family: @fontIcon;
+        color: #fff;
+        .transition(all .2s);
+        .em-size(33);
+    }
+
+    &.btn-download-appstore:before {
+        content: '\f179';
+    }
+
+    &.btn-download-googleplay:before {
+        content: '\f17b';
+        left: 16px;
+        top: 2px;
+    }
+
+    &.active,
+    &:focus,
+    &:hover {
+        color: #fff;
+        background-color: #000;
+    }
+    
+    @media screen and (min-width: @tabletMin) {
+        margin: 10px 7px;
+    }
+}
+
+
+.btn-download-small {
+    .btn-small;
+    border-radius: 7px;
+    padding-left: 40px;
+    margin: 10px 5px;
+
+    &:before {
+        left: 10px;
+        top: 2px;
+        .em-size(30);
+    }
+
+    &.btn-download-googleplay:before {
+        left: 11px;
+    }
 }
 
 /* ==========================================================================

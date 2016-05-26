@@ -1,7 +1,7 @@
 /**
  * Layout et positionnement général
  * @name         layout.less
- * @author       BiiG
+ * @author       Beer Please
 */
 
 /* ==========================================================================
@@ -93,8 +93,8 @@ a {
 	width: 100%;
   	background-image: url(../../images/background-beer.jpg);
   	background-position: center center;
-	//background-size: cover;
-	background-size: auto 100%;
+	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	.blur(5px);
 
@@ -120,6 +120,38 @@ a {
 	height: 100%;
 }
 
+.header-left,
+.header-right {
+	position: relative;
+}
+
+.header-right {
+	display: none;
+}
+
+
+@media screen and (min-width: @screen-md) {
+	.header-right {
+		position: relative;
+		text-align: center;
+		display: block;
+
+		img {
+			width: 500px;
+			height: auto;
+			margin-top: 80px;
+			margin-left: -250px;
+		}
+	}
+}
+
+@media screen and (min-width: @screen-lg) {
+	.header-right {
+		img {
+			margin-left: -300px;
+		}		
+	}
+}
 
 /* ==========================================================================
 	CONTENT

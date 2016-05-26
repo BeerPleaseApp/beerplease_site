@@ -94,7 +94,7 @@
             var self = this,
                 top = $(window).scrollTop();
 
-            self.elements.headerImage.css({'background-position' : 'center ' + (top/2)+"px"}); 
+            self.elements.headerImage.css({'background-position' : 'center ' + "-"+(top/4)+"px"}); 
         },
     };
 

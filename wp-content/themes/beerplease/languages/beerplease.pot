@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Maif\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: Mon Aug 03 2015 16:11:13 GMT+0200 (CEST)\n"
-"POT-Revision-Date: Thu Feb 11 2016 16:38:36 GMT+0100 (CET)\n"
+"POT-Revision-Date: Thu May 26 2016 23:12:15 GMT+0200 (CEST)\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -76,8 +76,24 @@ msgstr ""
 msgid "All rights reserved"
 msgstr ""
 
-#: ../header.php:61
+#: ../header.php:64
 msgid "Back to homepage"
+msgstr ""
+
+#: ../header.php:80
+msgid "Available on the"
+msgstr ""
+
+#: ../header.php:81
+msgid "App Store"
+msgstr ""
+
+#: ../header.php:86
+msgid "Available on"
+msgstr ""
+
+#: ../header.php:87
+msgid "Google Play"
 msgstr ""
 
 #. Name of the template
@@ -112,10 +128,6 @@ msgstr ""
 
 #: ../page-legalterms.php:52 ../templates/social-networks.php:47
 msgid "New window"
-msgstr ""
-
-#. Name of the template
-msgid "Page plan du site"
 msgstr ""
 
 #: ../search.php:11

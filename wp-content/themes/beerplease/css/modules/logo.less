@@ -8,32 +8,24 @@
 .logo-main {
     display: block;
     text-align: center;
+    padding: 25px 0;
 
     img {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        margin-left: -80px;
-        margin-top: -210px;
         display: inline-block;
         height: auto;
         width: 160px;
     }
 }
 .logo-baseline {
+    display: block;
     text-align: center;
     font-family: @fontRegular;
     color: #fff;
 
     p {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        line-height: 1.3em;
         width: 260px;
-        margin-top: -10px;
-        margin-bottom: 30px;
-        margin-left: -130px;
+        margin: 0 auto 20px;
+        line-height: 1.3em;
         display: inline-block;
         .em-size(16);
     }
@@ -41,18 +33,17 @@
 
 @media screen and (min-width: @tabletMin) {
     .logo-main {
+        padding: 100px 0 30px;
+
         img {
             width: 260px;
-            margin-left: -125px;
-            margin-top: -300px;
+            margin: 0 auto;
         }
     }
     .logo-baseline {
         p {
             width: 300px;
-            margin-top: 0;
-            margin-bottom: 40px;
-            margin-left: -150px;
+            margin: 0 auto 30px;
             .em-size(20);
         }
     }
